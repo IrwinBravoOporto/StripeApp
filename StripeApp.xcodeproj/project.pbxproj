@@ -364,6 +364,7 @@
 				DEVELOPMENT_TEAM = 7F86P3H7HK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StripeApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Beer For Life";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -394,6 +395,7 @@
 				DEVELOPMENT_TEAM = 7F86P3H7HK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StripeApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Beer For Life";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
