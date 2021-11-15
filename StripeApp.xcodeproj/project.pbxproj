@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4078906657757F9FAE78FF17 /* Pods_StripeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD98B5D705CE25BCFE75DEE /* Pods_StripeApp.framework */; };
 		62EADD96273EF04C00917AD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EADD95273EF04C00917AD7 /* AppDelegate.swift */; };
 		62EADD98273EF04C00917AD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EADD97273EF04C00917AD7 /* SceneDelegate.swift */; };
 		62EADD9A273EF04C00917AD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EADD99273EF04C00917AD7 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CD98B5D705CE25BCFE75DEE /* Pods_StripeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StripeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		559BAC19E036E9F48E6D875B /* Pods-StripeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StripeApp.debug.xcconfig"; path = "Target Support Files/Pods-StripeApp/Pods-StripeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		62A2099F2742B49D00406C37 /* StripeApp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = StripeApp.entitlements; sourceTree = "<group>"; };
 		62EADD92273EF04C00917AD7 /* StripeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StripeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62EADD95273EF04C00917AD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62EADD97273EF04C00917AD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,7 @@
 		62EADD9E273EF04E00917AD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62EADDA1273EF04E00917AD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62EADDA3273EF04E00917AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9121452983FE8E4BE6E6D1A /* Pods-StripeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StripeApp.release.xcconfig"; path = "Target Support Files/Pods-StripeApp/Pods-StripeApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +36,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4078906657757F9FAE78FF17 /* Pods_StripeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		506E6313934201DD16BB7F22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CD98B5D705CE25BCFE75DEE /* Pods_StripeApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		62EADD89273EF04C00917AD7 = {
 			isa = PBXGroup;
 			children = (
 				62EADD94273EF04C00917AD7 /* StripeApp */,
 				62EADD93273EF04C00917AD7 /* Products */,
+				7878A98F4F2C1EE3B3983ABE /* Pods */,
+				506E6313934201DD16BB7F22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +72,7 @@
 		62EADD94273EF04C00917AD7 /* StripeApp */ = {
 			isa = PBXGroup;
 			children = (
+				62A2099F2742B49D00406C37 /* StripeApp.entitlements */,
 				62EADD95273EF04C00917AD7 /* AppDelegate.swift */,
 				62EADD97273EF04C00917AD7 /* SceneDelegate.swift */,
 				62EADD99273EF04C00917AD7 /* ViewController.swift */,
@@ -67,6 +84,15 @@
 			path = StripeApp;
 			sourceTree = "<group>";
 		};
+		7878A98F4F2C1EE3B3983ABE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				559BAC19E036E9F48E6D875B /* Pods-StripeApp.debug.xcconfig */,
+				F9121452983FE8E4BE6E6D1A /* Pods-StripeApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62EADDA6273EF04E00917AD7 /* Build configuration list for PBXNativeTarget "StripeApp" */;
 			buildPhases = (
+				2191E32B158D15B632A13491 /* [CP] Check Pods Manifest.lock */,
 				62EADD8E273EF04C00917AD7 /* Sources */,
 				62EADD8F273EF04C00917AD7 /* Frameworks */,
 				62EADD90273EF04C00917AD7 /* Resources */,
+				118421C078AB906BB77DE386 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +160,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		118421C078AB906BB77DE386 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StripeApp/Pods-StripeApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StripeApp/Pods-StripeApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StripeApp/Pods-StripeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2191E32B158D15B632A13491 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StripeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		62EADD8E273EF04C00917AD7 /* Sources */ = {
@@ -284,12 +354,14 @@
 		};
 		62EADDA7273EF04E00917AD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 559BAC19E036E9F48E6D875B /* Pods-StripeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StripeApp/StripeApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7UN4YDYUNW;
+				DEVELOPMENT_TEAM = 7F86P3H7HK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StripeApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -302,7 +374,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = irwin.bravo.oporto.StripeApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdsdigital.millerlite.bfl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -312,12 +384,14 @@
 		};
 		62EADDA8273EF04E00917AD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9121452983FE8E4BE6E6D1A /* Pods-StripeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StripeApp/StripeApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7UN4YDYUNW;
+				DEVELOPMENT_TEAM = 7F86P3H7HK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StripeApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -330,7 +404,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = irwin.bravo.oporto.StripeApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdsdigital.millerlite.bfl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
